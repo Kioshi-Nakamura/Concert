@@ -3,27 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SGGS Orchestra Ticket System</title>
+    <title>Orchestra Ticket System SGGS</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
+
     <div class="container">
-        <h1>🎶✨ SGGS Orchestra Ticket System ✨🎶</h1>
-        <div class="ticket-form">
-            <h2>🎟️ Pilih Kategori Tiket</h2>
+        <h1>🎉🎶 SISTEM TIKET KONERT ORKESTRA SGGS 🎶🎉</h1>
+
+        <div>
+            <p><strong>Pilih kategori tiket:</strong></p>
             <select id="ticket-category">
-                <option value="1">👩‍🎓 Pelajar SGGS - RM12.00</option>
-                <option value="2">👨‍🏫 Guru SGGS - RM14.00</option>
-                <option value="3">👶 Orang Awam (Bawah 12 tahun) - RM5.50</option>
-                <option value="4">🧑‍🦰 Orang Awam (13 hingga 50 tahun) - RM20.00</option>
-                <option value="5">👵 Orang Awam (51 tahun dan ke atas) - RM15.00</option>
+                <option value="1">1️⃣ Pelajar SGGS (RM12.00)</option>
+                <option value="2">2️⃣ Guru SGGS (RM14.00)</option>
+                <option value="3">3️⃣ Orang Awam (Bawah 12 Tahun - RM5.50)</option>
+                <option value="4">4️⃣ Orang Awam (13 hingga 50 Tahun - RM20.00)</option>
+                <option value="5">5️⃣ Orang Awam (51 Tahun ke atas - RM15.00)</option>
             </select>
-            <button onclick="addTicket()">Tambah Tiket</button>
         </div>
 
-        <h2>💸 Jumlah Tiket: <span id="total-amount">RM0.00</span></h2>
-        <button onclick="resetTickets()">Reset Tiket</button>
+        <button id="add-ticket-button">Tambah Tiket</button>
+        <button id="finish-button">Selesai</button>
+
+        <h3 id="total-price">Jumlah: RM0.00</h3>
+        <div id="ticket-list"></div>
+
+        <p id="thank-you-message" style="display: none;">🎶 Terima kasih kerana membeli tiket. Jumpa di konsert! 🎶</p>
     </div>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
+
