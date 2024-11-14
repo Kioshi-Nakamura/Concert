@@ -52,4 +52,3 @@ addTicketButton.addEventListener('click', () => {
 finishButton.addEventListener('click', () => {
     thankYouMessage.style.display = 'block'; // Show the thank you message
 });
-
